@@ -1,52 +1,10 @@
 {
+  "extends": "../tsconfig.base.json",
   "compilerOptions": {
     "outDir": "./dist/",
-    "noImplicitAny": true,
-    "module": "ESNext",
-    "target": "es5",
-    "jsx": "react-jsx",
-    "allowJs": true,
-    "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
     "paths": {
       "@/*": ["./src/*"]
     },
     "baseUrl": "."
-  },
-  "ts-node": {
-    "compilerOptions": {
-      "module": "commonjs"
-    }
   }
 }
-
-// {
-//   "extends": "../tsconfig.base.json",
-//   "compilerOptions": {
-//     "outDir": "./dist/",
-//     "baseUrl": ".",
-//     "paths": {
-//       "@/*": ["./src/*"]
-//     }
-//   }
-// }
-
-// {
-//   "compilerOptions": {
-//     "noImplicitAny": true,
-//     "module": "ESNext",
-//     "target": "es5",
-//     "jsx": "react-jsx",
-//     "allowJs": true,
-//     "moduleResolution": "node",
-//     "esModuleInterop": true,
-//     "allowSyntheticDefaultImports": true,
-//     "resolveJsonModule": true
-//   },
-//   "ts-node": {
-//     "compilerOptions": {
-//       "module": "CommonJS"
-//     }
-//   }
-// }

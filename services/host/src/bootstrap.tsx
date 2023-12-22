@@ -1,7 +1,6 @@
 import { createRoot } from "react-dom/client";
-import { App } from "./components/App";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import React, { Suspense } from "react";
+import { router } from "./router/Router";
 
 const root = document.getElementById("root");
 
@@ -10,13 +9,5 @@ if (!root) {
 }
 
 const container = createRoot(root);
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-    children: [],
-  },
-]);
 
 container.render(<RouterProvider router={router} />);
